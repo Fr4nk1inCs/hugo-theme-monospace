@@ -26,6 +26,10 @@
 {{ if (fileExists "static/style.css") -}}
   <link rel="stylesheet" href="{{ "style.css" | absURL }}">
 {{- end }}
+<!-- Custom Prism.js theme -->
+{{ if (fileExists "static/prism.css") -}}
+  <link rel="stylesheet" href="{{ "prism.css" | absURL }}">
+{{- end }}
 
 <!-- Icons -->
 <link rel="shortcut icon" href="{{ "favicon.png" | absURL }}">

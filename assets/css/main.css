@@ -11,8 +11,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Fira Code", Monaco, Consolas, "Ubuntu Mono", monospace;
-  font-size: 1rem;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
   line-height: 1.54;
   letter-spacing: -0.02em;
   background-color: var(--background);
@@ -34,12 +34,12 @@ body {
   margin: 20px 0;
 }
 
-.headings--one-size ~ h1:first-child,
-.headings--one-size ~ h2:first-child,
-.headings--one-size ~ h3:first-child,
-.headings--one-size ~ h4:first-child,
-.headings--one-size ~ h5:first-child,
-.headings--one-size ~ h6:first-child {
+.headings--one-size~h1:first-child,
+.headings--one-size~h2:first-child,
+.headings--one-size~h3:first-child,
+.headings--one-size~h4:first-child,
+.headings--one-size~h5:first-child,
+.headings--one-size~h6:first-child {
   margin-top: 20px;
 }
 
@@ -113,7 +113,8 @@ blockquote.twitter-tweet::before {
   border-right: 1px solid color-mix(in srgb, var(--accent) 10%, transparent);
 }
 
-.container.full, .container.center {
+.container.full,
+.container.center {
   border: none;
   margin: 0 auto;
 }

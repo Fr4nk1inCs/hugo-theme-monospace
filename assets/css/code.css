@@ -6,6 +6,7 @@ pre {
   position: relative;
   margin: 20px 0;
   border: 1px solid color-mix(in srgb, var(--accent) 10%, transparent);
+  border-radius: var(--radius);
 }
 
 .code-toolbar + .code-toolbar,
