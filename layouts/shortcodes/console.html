@@ -1,0 +1,11 @@
+<pre
+  class="language-bash command-line"
+  {{- if .Get "user" }}data-user="{{ .Get "user" }}"{{ end }}
+  {{- if .Get "host" }}data-host="{{ .Get "host" }}"{{ end }}
+  {{- if .Get "prompt" }}data-prompt="{{ .Get "prompt" }}"{{ end }}
+  {{- if .Get "output" }}
+    data-output="{{ .Get "output" }}"
+  {{ else }}
+    data-filter-continuation="(out)"
+  {{ end }}
+><code>{{ .Inner | string }}</code></pre>
